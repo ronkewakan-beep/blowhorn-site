@@ -6,7 +6,7 @@
   {{ with .Description -}}
   <p class="body-lg docs-lead">{{ . | markdownify }}</p>
   {{ end -}}
-  {{ .Content -}}
+  {{ partial "docs-content.html" . -}}
   {{- partial "section-index.html" . -}}
 </div>
 {{- if ne .Parent.RelPermalink "/docs/" -}}
