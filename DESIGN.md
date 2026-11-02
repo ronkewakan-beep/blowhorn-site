@@ -64,6 +64,7 @@ Do:
 - Pick the variant by content, then check its neighbours in the row and the column at 390, 820 and 1440px.
 - Give every card link the same hover: a 2px lift and a stronger edge, no glow. Nothing moves under reduced motion.
 - Let a featured item be paper, and let one stat row be stamps.
+- Let a featured item stand out by fill and type, never by a stripe.
 
 Don't:
 
@@ -84,12 +85,13 @@ Say less, more clearly. Turn the verbosity dial down a notch from your first dra
 - Keep facts, guardrail wording and SEO terms; cut the padding around them. Don't shorten legal text substantively.
 - No em dashes. No period at the end of a section title.
 
-## PR checklist: whitespace and concision
+## PR checklist: whitespace, cards and concision
 
 - [ ] Every heading has at least `--head-gap` before its content; nothing touches
 - [ ] New sections use the shared section and `.section-head` classes, not page-specific spacing
 - [ ] Sections are clearly separated (whitespace, then divider or background shift if needed)
 - [ ] Paragraphs stay within `--text-measure`; cards use `--card-pad` and `--grid-gap`
+- [ ] No coloured stripe on one edge of a card, callout, quote, table row or panel; no two neighbours in a row or a column share a card variant, at any width the grid shows
 - [ ] Checked at 1280, 390 and 320 px, light and dark
 - [ ] Intros <= 2 sentences, card bodies <= ~30 words, one idea per sentence
 - [ ] No em dashes; no trailing periods on section titles
